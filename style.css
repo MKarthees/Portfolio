@@ -129,54 +129,114 @@ body {
 .sign p {
   margin-right: 30px;
 }
-@media (max-width: 1336px) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
+@media screen and (min-width: 200px) and (max-width: 640px) {
   .container {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-  }
-  .left {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
+  }
+  .container .left .name h1 {
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container .left {
+    width: 100%;
+    max-height: fit-content;
     background-color: black;
-    color: white;
-    width: 40%;
+  }
+  .container .left h1 {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .left .personal ul {
+    max-width: 50%;
+  }
+  .left .personal ul li {
+    position: relative;
+    top: -20px;
+  }
+  .left .strength li {
+    top: -20px;
+    position: relative;
+  }
+
+  .language li {
+    position: relative;
+    top: -10px;
+  }
+  .left .certificate {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+  }
+  .left .certificate li {
+    position: relative;
+    top: -30px;
+  }
+  .container .right {
+    background-color: aqua;
+    width: 110%;
+    margin: 0px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  .right .career p {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .right .table-content {
+    width: 90%;
+    border: 2px solid black;
+    font-size: 14px;
+  }
+
+  .table-content thead th {
+    font-size: 12px;
+  }
+  .table-content tbody {
+    padding: 0px;
+    font-size: 10px;
+  }
+  .table-content tr td {
+    width: 90%;
+  }
+  .table-content th,
+  tr {
+    padding: 0px;
+  }
+  .table-content tr td {
+    padding: 0px;
+  }
+  .project p {
+    width: 90%;
+    font-size: 12px;
+  }
+  .exprience li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .skills ul {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .sign {
+    text-align: center;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 1038px) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    width: 40%;
-  }
-}
-
-@media (max-width: 670px) {
+@media screen and (min-width: 600px) and (max-width: 1110px) {
   .left {
     width: 40%;
   }
   .left h1 {
-    width: 70%;
+    width: 100%;
     font-size: 20px;
   }
   .left .personal h1 {
@@ -186,7 +246,7 @@ body {
   }
 
   .left .personal ul {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     top: -10px;
@@ -269,11 +329,6 @@ body {
   }
 
   .right .table-content {
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-
     border: 2px solid black;
     margin: 25px 0px;
     font-size: 14px;
