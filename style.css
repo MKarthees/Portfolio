@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  width: 40%;
+}
+.personal h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.personal ul {
+  margin-top: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.strength h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.strength ul {
+  margin-top: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.language h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.language ul {
+  margin-top: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.certificate h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.certificate ul {
+  margin-top: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.right {
+  width: 60%;
+  margin-left: 50px;
+}
+.career h1 {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.table-content {
+  border: 2px solid black;
+  margin: 25px 0px;
+  width: 100%;
+}
+.career p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.table-content th {
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+.table-content td {
+  padding: 10px;
+}
+.table-content thead tr {
+  text-align: center;
+}
+.table-content tr {
+  width: 100%;
+  padding: 20px 10px;
+
+  padding: 20px;
+  text-align: center;
+}
+.education h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.project h1 {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+  font-size: 25px;
+}
+.project p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.exprience h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.exprience li {
+  margin-top: 10px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.skills h1 {
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.skills ul {
+  margin-top: 10px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.sign {
+  text-align: right;
+}
+.sign p {
+  margin-right: 30px;
+}
+@media (max-width: 1336px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+  }
+}
+
+@media (max-width: 1038px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+  }
+}
+
+@media (max-width: 670px) {
+  .left {
+    width: 40%;
+  }
+  .left h1 {
+    width: 70%;
+    font-size: 20px;
+  }
+  .left .personal h1 {
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .left .personal ul {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    top: -10px;
+    right: 35px;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .left .strength {
+    height: 10%;
+  }
+  .left .strength h1 {
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .left .strength ul {
+    top: -10px;
+    right: 35px;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .left .language {
+    margin-top: 100px;
+  }
+  .left .language h1 {
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .left .language ul {
+    width: 80%;
+    flex-wrap: wrap;
+    top: -10px;
+    right: 35px;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .left .certificate h1 {
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .left .certificate ul {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    top: -10px;
+    right: 35px;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .right {
+    width: 60%;
+    margin-left: 10px;
+  }
+  .right .career h1 {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .right .career p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .right .education h1 {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .right .table-content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 2px solid black;
+    margin: 25px 0px;
+    font-size: 14px;
+  }
+  .table-content thead {
+    width: 100%;
+  }
+  .table-content thead th {
+    font-size: 12px;
+  }
+  .table-content tbody {
+    font-size: 10px;
+  }
+  .table-content tr td {
+    width: 100%;
+  }
+  .table-content th,
+  tr {
+    padding: 0px;
+  }
+  .table-content tr td {
+    padding: 0px;
+  }
+  .project h1 {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .project p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .exprience h1 {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .exprience li {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 10px;
+  }
+  .skills h1 {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .skills ul {
+    position: relative;
+    right: 25px;
+  }
+  .skills ul li {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .sign {
+    font-size: 13px;
+  }
+}
