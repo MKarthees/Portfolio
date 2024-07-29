@@ -1,396 +1,385 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  display: flex;
-  justify-content: center;
+:root {
+  --bg: #0b2447;
+  --font: #eeeeee;
+  --bg2: #508c9b;
+}
+html {
+  scroll-behavior: smooth;
 }
 .container {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-}
-.left {
+  background-color: var(--bg);
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: fit-content;
   padding: 20px;
-  background-color: black;
-  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+.logo h1 {
+  color: var(--font);
+  letter-spacing: 2px;
+}
+
+.menu a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--font);
+  margin-left: 20px;
+  transition: 0.2s;
+}
+.menu a:hover {
+  color: var(--bg2);
+}
+.menu i {
+  color: var(--font);
+  font-size: 20px;
+  display: none;
+  z-index: 1;
+}
+.menu-bar {
+  color: var(--font);
+  font-size: 25px;
+  display: none;
+}
+.content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  color: var(--font);
+  font-size: 40px;
+  transition: 0.4s;
+  animation-name: title;
+  animation-duration: 1s;
+}
+
+.title p {
+  max-width: 400px;
+  color: var(--font);
+}
+.image img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* --------------- Second Page ------------- */
+.education-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #508c9b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+.education {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.school {
+  background-color: #eeeeee;
+  padding: 20px;
+  position: relative;
+}
+
+.school::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  width: 5%;
+  height: 100%;
+  background-color: white;
+}
+
+/* ----------- Third Page ----------- */
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  margin-top: 100px;
   width: 40%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.personal h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
+.left h2 {
+  color: var(--font);
+  text-align: center;
+  margin: 10px 0;
 }
-.personal ul {
-  margin-top: 20px;
-  line-height: 40px;
-  margin-bottom: 10px;
+.left form {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--font);
 }
-.strength h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
+.left form .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.strength ul {
-  margin-top: 20px;
-  line-height: 40px;
-  margin-bottom: 10px;
+.left form .input-box input {
+  flex: 0.95;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 10px 0;
 }
-.language h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
+.left form .input-box label {
+  font-size: 15px;
+  font-weight: 600;
 }
-.language ul {
-  margin-top: 20px;
-  line-height: 40px;
-  margin-bottom: 10px;
+.left form .btn {
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.certificate h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
+.left form .btn button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
 }
-.certificate ul {
-  margin-top: 20px;
-  line-height: 40px;
-  margin-bottom: 10px;
+.left form .btn .resume {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
 }
 .right {
-  width: 60%;
-  margin-left: 50px;
-}
-.career h1 {
-  border-bottom: 2px solid black;
-  margin-top: 50px;
-  font-size: 25px;
-}
-
-.table-content {
-  border: 2px solid black;
-  margin: 25px 0px;
-  width: 100%;
-}
-.career p {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-.table-content th {
-  padding: 10px;
-  border-bottom: 2px solid black;
-}
-.table-content td {
-  padding: 10px;
-}
-.table-content thead tr {
+  margin-top: 150px;
   text-align: center;
 }
-.table-content tr {
-  width: 100%;
-  padding: 20px 10px;
+.right h2 {
+  color: var(--font);
+  font-size: 50px;
+}
+.right p {
+  color: var(--font);
+  font-size: 18px;
+}
 
-  padding: 20px;
-  text-align: center;
+.right i {
+  padding: 10px;
+  margin: 10px 10px;
+  font-size: 30px;
+  color: var(--font);
 }
-.education h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
-}
-.project h1 {
-  border-bottom: 2px solid black;
-  margin-top: 50px;
-  font-size: 25px;
-}
-.project p {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-.exprience h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
-}
-.exprience li {
-  margin-top: 10px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.skills h1 {
-  border-bottom: 2px solid black;
-  font-size: 25px;
-}
-.skills ul {
-  margin-top: 10px;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-.sign {
-  text-align: right;
-}
-.sign p {
-  margin-right: 30px;
-}
-@media screen and (min-width: 200px) and (max-width: 640px) {
-  .container {
+@media screen and (max-width: 640px) {
+  .menu-bar {
+    display: block;
+  }
+  .menu i {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: black;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    border-radius: 20px;
+  }
+  .menu a {
     width: 100%;
     display: flex;
-    flex-direction: column;
-  }
-  .container .left .name h1 {
-    color: aqua;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .container .left {
-    width: 100%;
-    max-height: fit-content;
-    background-color: black;
-  }
-  .container .left h1 {
-    margin-bottom: 40px;
-    font-size: 20px;
-  }
-
-  .left .personal ul {
-    max-width: 50%;
-  }
-  .left .personal ul li {
-    position: relative;
-    top: -20px;
-  }
-  .left .strength li {
-    top: -20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    margin: 0px;
+    padding: 20px;
     position: relative;
   }
-
-  .language li {
-    position: relative;
-    top: -10px;
-  }
-  .left .certificate {
-    display: flex;
-    flex-direction: column;
-
+  .education {
+    background-color: rgba(255, 255, 255, 0.2);
     width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
   }
-  .left .certificate li {
+  .school {
+    font-size: 13px;
+    background-color: var(--font);
+    padding: 0px;
     position: relative;
-    top: -30px;
   }
-  .container .right {
-    background-color: aqua;
-    width: 110%;
+
+  .school::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    width: 5%;
+    height: 100%;
+    background-color: white;
+  }
+  .school-description {
+    margin-left: 20px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .percentage {
+    font-size: 15px;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -2;
+  }
+  .contact-container .left {
+    position: absolute;
+    top: 0;
+    width: 90%;
+  }
+  .contact-container .left form {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-container .left form .input-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-container .left form .input-box input {
+    width: 100%;
+    flex: 1;
+    margin: 5px;
+  }
+
+  .left form .btn button {
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .contact-container .right {
+    margin-top: 300px;
+  }
+  .contact-container .right h2 {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .contact-container .right p {
+    font-weight: 500;
     margin: 0px;
   }
-  .right h1 {
-    font-size: 20px;
-  }
-  .right .career p {
-    width: 90%;
-    font-size: 13px;
-  }
-
-  .right .table-content {
-    width: 90%;
-    border: 2px solid black;
-    font-size: 14px;
-  }
-
-  .table-content thead th {
-    font-size: 12px;
-  }
-  .table-content tbody {
+  .contact-container .right i {
+    margin: 5px 10px;
+    font-size: 25px;
     padding: 0px;
-    font-size: 10px;
-  }
-  .table-content tr td {
-    width: 90%;
-  }
-  .table-content th,
-  tr {
-    padding: 0px;
-  }
-  .table-content tr td {
-    padding: 0px;
-  }
-  .project p {
-    width: 90%;
-    font-size: 12px;
-  }
-  .exprience li {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .skills ul {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .sign {
-    text-align: center;
-    font-size: 13px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1110px) {
+@media screen and (max-width: 970px) {
+  .content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
   .left {
-    width: 40%;
-  }
-  .left h1 {
-    width: 100%;
-    font-size: 20px;
-  }
-  .left .personal h1 {
-    border-bottom: 2px solid white;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-
-  .left .personal ul {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    top: -10px;
-    right: 35px;
-    position: relative;
-    font-size: 12px;
-    margin-bottom: 20px;
-    line-height: 30px;
-  }
-  .left .strength {
-    height: 10%;
-  }
-  .left .strength h1 {
-    border-bottom: 2px solid white;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .left .strength ul {
-    top: -10px;
-    right: 35px;
-    position: relative;
-    font-size: 12px;
-    margin-bottom: 20px;
-    line-height: 30px;
-  }
-  .left .language {
     margin-top: 100px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
   }
-  .left .language h1 {
-    border-bottom: 2px solid white;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .left .language ul {
-    width: 80%;
-    flex-wrap: wrap;
-    top: -10px;
-    right: 35px;
-    position: relative;
-    font-size: 12px;
-    margin-bottom: 20px;
-    line-height: 30px;
-  }
-
-  .left .certificate h1 {
-    border-bottom: 2px solid white;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .left .certificate ul {
-    width: 80%;
+  .left form {
+    width: 100%;
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    top: -10px;
-    right: 35px;
-    position: relative;
-    font-size: 12px;
-    margin-bottom: 20px;
-    line-height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .right {
-    width: 60%;
-    margin-left: 10px;
+  .right h2 {
+    font-size: 40px;
   }
-  .right .career h1 {
-    border-bottom: 2px solid black;
-    margin-top: 50px;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  .right .career p {
-    width: 100%;
-    font-size: 12px;
-  }
-  .right .education h1 {
-    border-bottom: 2px solid black;
-    margin-top: 50px;
-    margin-top: 20px;
-    font-size: 18px;
+  .right p {
+    font-size: 15px;
   }
 
-  .right .table-content {
-    border: 2px solid black;
-    margin: 25px 0px;
-    font-size: 14px;
+  .right i {
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 30px;
   }
-  .table-content thead {
-    width: 100%;
+}
+
+@keyframes title {
+  0% {
+    letter-spacing: 0px;
   }
-  .table-content thead th {
-    font-size: 12px;
-  }
-  .table-content tbody {
-    font-size: 10px;
-  }
-  .table-content tr td {
-    width: 100%;
-  }
-  .table-content th,
-  tr {
-    padding: 0px;
-  }
-  .table-content tr td {
-    padding: 0px;
-  }
-  .project h1 {
-    border-bottom: 2px solid black;
-    margin-top: 50px;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  .project p {
-    width: 100%;
-    font-size: 12px;
-  }
-  .exprience h1 {
-    border-bottom: 2px solid black;
-    margin-top: 50px;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  .exprience li {
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 10px;
-  }
-  .skills h1 {
-    border-bottom: 2px solid black;
-    margin-top: 50px;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  .skills ul {
-    position: relative;
-    right: 25px;
-  }
-  .skills ul li {
-    font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .sign {
-    font-size: 13px;
+  100% {
+    letter-spacing: 10px;
   }
 }
