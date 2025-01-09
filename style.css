@@ -405,7 +405,7 @@ body {
   }
 
   .project-img img{
-    margin-top: 100px;
+    margin-top: 50px;
     min-width: 300rem;
     min-height: 100%;
    }
@@ -462,7 +462,7 @@ body {
 }
 @media screen and (max-width: 2590px) {
   .project-img img{
-    margin-top: 100px;
+    margin-top: 50px;
     min-width: 300rem;
     min-height: 100%;
    }
